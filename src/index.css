@@ -1,0 +1,113 @@
+/* ==============================
+   Tailwind v4 (ORDER MATTERS)
+================================ */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Enable @apply in Tailwind v4 */
+@reference "tailwindcss";
+
+/* ==============================
+   Color System (Blue + Saffron)
+================================ */
+:root {
+  --blue-dark: #0F172A;   /* Deep academic blue */
+  --blue-main: #1E3A8A;   /* Primary blue */
+  --blue-link: #2563EB;   /* Link blue */
+  --saffron: #F59E0B;     /* Highlight saffron */
+  --saffron-dark: #D97706;
+  --text-main: #374151;   /* Body text */
+}
+
+/* ==============================
+   Global Styles
+================================ */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: white;
+  color: var(--text-main);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: var(--blue-dark);
+}
+
+/* Paragraphs */
+p {
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: var(--blue-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--saffron);
+}
+
+/* ==============================
+   Section Titles (Academic)
+================================ */
+.section-title {
+  @apply text-2xl font-semibold mb-6 font-serif relative;
+  color: var(--blue-main);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  background-color: var(--saffron);
+}
+
+/* ==============================
+   Buttons
+================================ */
+.btn-primary {
+  @apply px-6 py-2 rounded transition font-medium;
+  background-color: var(--saffron);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--saffron-dark);
+}
+
+.btn-secondary {
+  @apply px-6 py-2 rounded border transition;
+  border-color: var(--blue-main);
+  color: var(--blue-main);
+}
+
+.btn-secondary:hover {
+  background-color: var(--blue-main);
+  color: white;
+}
+
+/* ==============================
+   Cards (Research / Sections)
+================================ */
+.card {
+  @apply border rounded-lg p-6 transition;
+  border-color: #E5E7EB;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================
+   Utility (Optional)
+================================ */
+.text-highlight {
+  color: var(--saffron);
+  font-weight: 600;
+}

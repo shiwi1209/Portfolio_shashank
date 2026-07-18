@@ -1,5 +1,6 @@
 import React from "react";
 import profileImg from "../assets/profilephoto.jpeg";
+import bhuGateBackground from "../assets/bhu-gate-background.png";
 import bookCover from "../assets/book5.jpeg";
 import { Link } from "react-router-dom";
 
@@ -12,8 +13,7 @@ export default function Home() {
         <div
           className="h-72 w-full bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url(https://www.placement.iitbhu.ac.in/static/images/bhu_gate.jpg)",
+            backgroundImage: `url(${bhuGateBackground})`,
           }}
         />
 

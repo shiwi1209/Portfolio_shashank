@@ -1,20 +1,11 @@
 import React from "react";
-import {
-  FaEnvelope,
-  FaLinkedin,
-  FaWhatsapp,
-  FaTwitter,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaEnvelope, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer
-      style={{ backgroundColor: "#D4E157" }}
-      className="text-gray-900 mt-16"
-    >
+    <footer className="site-footer">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        
-        {/* Contact Info */}
         <div className="text-center md:text-left text-sm">
           <p>
             Contact:{" "}
@@ -27,7 +18,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Social Links */}
         <div className="flex gap-5 text-2xl">
           <a
             href="mailto:shekhar.shashank@bhu.ac.in"
@@ -55,27 +45,14 @@ export default function Footer() {
           >
             <FaWhatsapp />
           </a>
-
-          <a
-            href="https://twitter.com/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-110 transition"
-          >
-            <FaTwitter />
-          </a>
         </div>
       </div>
 
-      {/* Bottom Strip */}
-      <div
-        style={{ backgroundColor: "#C0CA33" }}
-        className="text-center text-sm py-2"
-      >
+      <div className="footer-strip text-center text-sm py-2">
         © 2026 Shashank Shekhar ·{" "}
-        <a href="/contact" className="underline">
+        <Link to="/contact" className="underline">
           Contact
-        </a>
+        </Link>
       </div>
     </footer>
   );

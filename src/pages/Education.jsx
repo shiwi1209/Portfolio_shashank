@@ -3,7 +3,7 @@ import profileImg from "../assets/profilephoto.jpeg";
 
 export default function Education() {
   return (
-    <main className="pt-28 bg-white">
+    <main className="pt-15 bg-white">
       {/* HERO */}
       <section className="relative">
         <div

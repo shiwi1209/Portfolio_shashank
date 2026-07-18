@@ -22,7 +22,7 @@ export default function Contact() {
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
 
-    } catch (error) {
+    } catch {
       alert("Something went wrong!");
     }
   };

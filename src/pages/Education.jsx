@@ -1,5 +1,6 @@
 import React from "react";
 import profileImg from "../assets/profilephoto.jpeg";
+import bhuGateBackground from "../assets/bhu-gate-background.png";
 
 export default function Education() {
   return (
@@ -9,8 +10,7 @@ export default function Education() {
         <div
           className="h-48 w-full bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url(https://www.placement.iitbhu.ac.in/static/images/bhu_gate.jpg)",
+            backgroundImage: `url(${bhuGateBackground})`,
           }}
         />
       </section>
